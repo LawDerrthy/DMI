@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:EcoAppODS.Pages"
+       x:Class="EcoAppODS.AppShell">
+
+    <TabBar>
+        <ShellContent Title="Inicio de Sesión" ContentTemplate="{DataTemplate pages:LoginPage}" />
+        <ShellContent Title="ODS 15" ContentTemplate="{DataTemplate pages:InfoPage}" />
+        <ShellContent Title="Reporte" ContentTemplate="{DataTemplate pages:ReportePage}" />
+        <ShellContent Title="Ajustes" ContentTemplate="{DataTemplate pages:SettingsPage}" />
+    </TabBar>
+</Shell>

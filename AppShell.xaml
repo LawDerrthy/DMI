@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:EcoAppODS.Pages"
+       x:Class="EcoAppODS.AppShell"
+       Shell.FlyoutBehavior="Disabled">
+
+    <!-- Tabs principales -->
+    <TabBar>
+
+        <ShellContent
+            Title="Inicio"
+            Icon="home.png"
+            ContentTemplate="{DataTemplate pages:InfoPage}" />
+
+        <ShellContent
+            Title="Reporte"
+            Icon="report.png"
+            ContentTemplate="{DataTemplate pages:ReportePage}" />
+
+        <ShellContent
+            Title="Ajustes"
+            Icon="settings.png"
+            ContentTemplate="{DataTemplate pages:SettingsPage}" />
+
+    </TabBar>
+</Shell>
